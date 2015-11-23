@@ -2,29 +2,23 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Tic Tac Toe</title>
+  <title>TIC TAC OVO</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <header>Tic Tac Toe</header>
-  <div>
-    <div class = "container">
-      <div class = "square" id ="s1"></div>
-      <div class = "square" id ="s2"></div>
-      <div class = "square" id ="s3"></div>
-    </div>
-    <div class = "container2">
-      <div class = "square" id ="s4"></div>
-      <div class = "square" id ="s5"> </div>
-      <div class = "square" id ="s6"> </div>
-    </div>
-    <div class = "container3">
-      <div class = "square" id ="s7"> </div>
-      <div class = "square" id ="s8"> </div>
-      <div class = "square" id ="s9"> </div>
-    </div>
+  <header>TIC TAC OVO</header>
+  <div id = "grid">
+      <input type="button" onclick="clickBtn('s1')" id="s1"/>
+      <input type="button" onclick="clickBtn('s2')" id="s2"/>
+      <input type="button" onclick="clickBtn('s3')" id="s3"/>
+      <input type="button" onclick="clickBtn('s4')" id="s4"/>
+      <input type="button" onclick="clickBtn('s5')" id="s5"/>
+      <input type="button" onclick="clickBtn('s6')" id="s6"/>
+      <input type="button" onclick="clickBtn('s7')" id="s7"/>
+      <input type="button" onclick="clickBtn('s8')" id="s8"/>
+      <input class = "square" type="button" onclick="clickBtn('s9')" id="s9"/>
+      <button id="reset" onclick="resetTable()">Reset</button>
   </div>
-  <button id="reset" onclick="resetTable()">Reset</button>
   <script src="script.js"></script>
 </body>
 </html>

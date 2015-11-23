@@ -15,12 +15,6 @@ function clickBtn(btn){
   }
 }
 
-//function myFunction() {
-//    var x = document.getElementsByClassName("color");
-//    x.color = #222;
-//}
-
-
 function winner(){
   if (
   document.getElementById("s1").value == "X" &&
@@ -110,3 +104,8 @@ function resetTable (){
   document.getElementById("s8").style.background= "blue";
   document.getElementById("s9").style.background= "blue";
 }
+
+ $(function(){
+      $(".player").YTPlayer();
+    });
+

@@ -1,7 +1,8 @@
 var player = 1;
 
-function clickBtn(btn) {
+function clickBtn(btn){
   if (player===1){
+  document.getElementById(btn).style.background= "red";
   document.getElementById(btn).value = "X";
   document.getElementById(btn).disabled = "disabled";
   player -= 1;
@@ -13,6 +14,12 @@ function clickBtn(btn) {
   winner();
   }
 }
+
+//function myFunction() {
+//    var x = document.getElementsByClassName("color");
+//    x.color = #222;
+//}
+
 
 function winner(){
   if (
@@ -74,8 +81,6 @@ function winner(){
   }
 }
 
-element.addEventListener(event, function, useCapture)
-
 function resetTable (){
   document.getElementById("s1").value = "";
   document.getElementById("s2").value = "";
@@ -95,4 +100,13 @@ function resetTable (){
   document.getElementById("s7").disabled = "";
   document.getElementById("s8").disabled = "";
   document.getElementById("s9").disabled = "";
+  document.getElementById("s1").style.background= "blue";
+  document.getElementById("s2").style.background= "blue";
+  document.getElementById("s3").style.background= "blue";
+  document.getElementById("s4").style.background= "blue";
+  document.getElementById("s5").style.background= "blue";
+  document.getElementById("s6").style.background= "blue";
+  document.getElementById("s7").style.background= "blue";
+  document.getElementById("s8").style.background= "blue";
+  document.getElementById("s9").style.background= "blue";
 }
